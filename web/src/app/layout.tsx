@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("bg-dashboard font-sans", inter.variable)}>
-        <main className="min-h-screen">
+        <main className="min-h-screen flex">
           <Sidebar />
           {children}
         </main>
