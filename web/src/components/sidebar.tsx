@@ -1,10 +1,6 @@
 "use client";
 import {
-  CalendarCheck2,
-  CheckSquare,
   BookCopy,
-  BookKey,
-  BookType,
   ChevronRight,
   Blocks,
   LayoutGrid,
