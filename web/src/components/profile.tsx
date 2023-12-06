@@ -1,41 +1,22 @@
 import React from "react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { LogOut } from "lucide-react";
+import { Avatar, AvatarImage } from "./ui/avatar";
 
 const Profile = () => {
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger>
-        <Avatar>
-          <AvatarImage src="http://github.com/shadcn.png" />
-          <AvatarFallback>MM</AvatarFallback>
-        </Avatar>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent className="mr-3">
-        <DropdownMenuGroup>
-          <DropdownMenuItem className="hover:bg-transparent">
-            <div>
-              <p>Matheus Motta</p>
-              <span className="text-slate-400 text-xs">Aluno</span>
-            </div>
-          </DropdownMenuItem>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem className="text-sm text-red-500 hover:bg-slate-100 cursor-pointer">
-            Sair
-            <LogOut className="w-4 h-4" />
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <div className="flex items-center gap-3 text-left">
+      <Avatar>
+        <AvatarImage src="https://github.com/shadcn.png" />
+      </Avatar>
+      <p className="max-w-[140px] text-sm leading-snug">
+        Matheus
+        <a
+          href="/api/auth/logout"
+          className="block text-red-400 hover:text-red-300"
+        >
+          Sair
+        </a>
+      </p>
+    </div>
   );
 };
 
