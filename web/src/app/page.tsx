@@ -1,13 +1,14 @@
-import Profile from "@/components/profile";
+import PagesHeader from "@/components/pages-header";
 
 export default function Home() {
   return (
-    <main className="px-4 py-3 flex-1">
-      <header className="flex items-center justify-between">
-        <h1 className="text-sm font-semibold">Dashboard</h1>
+    <main className="px-5 py-4 flex-1 flex flex-col gap-7">
+      <div className="flex-1">
+        <PagesHeader pageTitle="Dashboard" />
 
-        <Profile />
-      </header>
+        {/* graphics */}
+        <div className=""></div>
+      </div>
     </main>
   );
 }
