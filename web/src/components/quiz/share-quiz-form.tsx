@@ -19,9 +19,9 @@ const ShareQuizForm = (props: ShareProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="bg-main font-semibold w-fit gap-1">
+        <Button variant={"outline"} className="w-fit gap-1">
           <Share2 className="w-4 h-4" />
-          Compartilhar
+          Share
         </Button>
       </DialogTrigger>
       <DialogContent>
