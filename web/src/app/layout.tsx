@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import Sidebar from "@/components/sidebar";
 
 const inter = FontSans({
   subsets: ["latin"],
@@ -22,11 +21,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("bg-dashboard font-sans", inter.variable)}>
-        <main className="min-h-screen flex">
-          <Sidebar />
-          {children}
-        </main>
+      <body className={cn("bg-slate-200 font-sans", inter.variable)}>
+        {children}
       </body>
     </html>
   );
